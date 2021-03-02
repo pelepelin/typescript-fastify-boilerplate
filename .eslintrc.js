@@ -19,12 +19,12 @@ module.exports = {
   parser: "@typescript-eslint/parser",
   parserOptions: {
     ecmaVersion: 2020,
-    project: './tsconfig.eslint.json'
+    project: "./tsconfig.eslint.json",
   },
   plugins: ["@typescript-eslint"],
   rules: {
     "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
-    "@typescript-eslint/require-await": 0
+    "@typescript-eslint/require-await": 0,
   },
   ignorePatterns: ["dist/", "coverage/"],
 };

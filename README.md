@@ -1,2 +1,1 @@
-typescript-fastify-boilerplate
-==============================
+# typescript-fastify-boilerplate
