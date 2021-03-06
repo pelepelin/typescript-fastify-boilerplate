@@ -1,5 +1,7 @@
+// Default tsconfig is used by all tools and so it includes files which are not compiled to dist.
 {
   "compilerOptions": {
+    "noEmit": true,
     "target": "es2020",
     "module": "commonjs",
     "lib": ["es2020"],

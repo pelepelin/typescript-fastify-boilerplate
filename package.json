@@ -5,7 +5,7 @@
   "author": "Konstantin Pelepelin",
   "main": "./dist/app.js",
   "scripts": {
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.dist.json",
     "prebuild": "rimraf dist",
     "start": "node dist/server.js",
     "dev": "ts-node-dev --respawn src/server.ts",
