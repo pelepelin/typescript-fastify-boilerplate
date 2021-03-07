@@ -9,7 +9,7 @@
     "prebuild": "rimraf dist",
     "start": "node dist/server.js",
     "dev": "ts-node-dev --respawn src/server.ts",
-    "test": "true",
+    "test": "jest",
     "lint": "run-p lint:*",
     "lint:eslint": "eslint .",
     "lint:prettier": "prettier --check .",

@@ -1,10 +1,4 @@
 {
-  "env": {
-    "es2020": true,
-    "node": true
-    // TODO: move to overrides
-    // jest: true,
-  },
   "extends": [
     "eslint:recommended",
     "google",
@@ -16,6 +10,10 @@
     "plugin:jest/recommended",
     "prettier"
   ],
+  "env": {
+    "es2020": true,
+    "node": true
+  },
   "parserOptions": {
     "ecmaVersion": 2020,
     "project": "./tsconfig.json"
@@ -29,5 +27,16 @@
     ],
     "@typescript-eslint/require-await": 0
   },
-  "ignorePatterns": ["dist/", "coverage/"]
+  "ignorePatterns": ["dist/", "coverage/"],
+  "overrides": [
+    {
+      // pattern from jest testMatch
+      "files": ["src/**/__tests__/*.test.[jt]s?(x)"],
+      "rules": {
+        "@typescript-eslint/no-unsafe-assignment": 0,
+        "@typescript-eslint/no-unsafe-member-access": 0,
+        "@typescript-eslint/unbound-method": 0
+      }
+    }
+  ]
 }
