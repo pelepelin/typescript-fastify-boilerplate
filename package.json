@@ -7,8 +7,8 @@
   "scripts": {
     "build": "tsc -p tsconfig.dist.json",
     "prebuild": "rimraf dist",
-    "start": "node dist/server.js",
-    "dev": "ts-node-dev --respawn src/server.ts",
+    "start": "node dist/main.js",
+    "dev": "ts-node-dev --respawn src/main.ts",
     "test": "jest",
     "lint": "run-p lint:*",
     "lint:eslint": "eslint .",
