@@ -8,7 +8,7 @@
     "build": "tsc -p tsconfig.dist.json",
     "prebuild": "rimraf dist",
     "start": "node dist/main.js",
-    "dev": "ts-node-dev --respawn src/main.ts",
+    "dev": "ts-node-dev --respawn --project tsconfig.dist.json src/main.ts",
     "test": "jest",
     "lint": "run-p lint:*",
     "lint:eslint": "eslint .",
@@ -30,6 +30,7 @@
     "fastify": "^3.12.0"
   },
   "devDependencies": {
+    "@types/jest": "^26.0.20",
     "@types/node": "^14.14.31",
     "@typescript-eslint/eslint-plugin": "~4.16.1",
     "@typescript-eslint/parser": "~4.16.1",

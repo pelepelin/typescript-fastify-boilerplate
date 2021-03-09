@@ -33,6 +33,7 @@
       // pattern from jest testMatch
       "files": ["src/**/__tests__/*.test.[jt]s?(x)"],
       "rules": {
+        "@typescript-eslint/no-explicit-any": 0,
         "@typescript-eslint/no-unsafe-assignment": 0,
         "@typescript-eslint/no-unsafe-member-access": 0,
         "@typescript-eslint/unbound-method": 0
