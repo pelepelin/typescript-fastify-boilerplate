@@ -11,12 +11,12 @@ jest.mock("fastify", () => ({
 jest.mock("../app");
 
 describe("server", () => {
-  it("is created", async () => {
+  it("is created", () => {
     expect(fastify).toHaveBeenCalled();
     expect(server).toBe(mocked(fastify).mock.results[0].value);
   });
 
-  it("registers app", async () => {
+  it("registers app", () => {
     expect(server.register).toHaveBeenCalledWith(app);
   });
 });
