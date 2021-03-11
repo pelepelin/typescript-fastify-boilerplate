@@ -1,8 +1,10 @@
 {
   "name": "typescript-fastify-boilerplate",
   "version": "0.0.1",
-  "description": "",
+  "description": "Fastify application template with TypeScript and Jest",
   "author": "Konstantin Pelepelin",
+  "license": "Unlicense",
+  "private": true,
   "main": "./dist/app.js",
   "scripts": {
     "build": "tsc -p tsconfig.dist.json",
