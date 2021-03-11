@@ -9,7 +9,7 @@
     "prebuild": "rimraf dist",
     "start": "node dist/main.js",
     "dev": "ts-node-dev --respawn --project tsconfig.dist.json src/main.ts",
-    "test": "jest",
+    "test": "jest --coverage",
     "lint": "run-p lint:*",
     "lint:eslint": "eslint .",
     "lint:prettier": "prettier --check .",
@@ -19,7 +19,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged && npm test"
+      "pre-commit": "lint-staged && jest --no-coverage"
     }
   },
   "lint-staged": {
