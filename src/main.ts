@@ -1,8 +1,8 @@
-import { env } from "./env";
+import { LISTEN_ADDRESS, PORT } from "./config";
 import { server } from "./server";
 
 // Start listening.
-server.listen(env.PORT ?? "3000", env.LISTEN_ADDRESS).catch((err: Error) => {
+server.listen(PORT, LISTEN_ADDRESS).catch((err: Error) => {
   server.log.error(err.message);
   process.exit(1);
 });
