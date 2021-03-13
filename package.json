@@ -10,7 +10,7 @@
     "build": "tsc -p tsconfig.dist.json",
     "prebuild": "rimraf dist",
     "start": "node dist/main.js",
-    "dev": "ts-node-dev --respawn --project tsconfig.dist.json src/main.ts",
+    "dev": "ts-node-dev --respawn --project tsconfig.dist.json --watch .env src/main.ts",
     "test": "jest --coverage",
     "lint": "run-p lint:*",
     "lint:eslint": "eslint .",
