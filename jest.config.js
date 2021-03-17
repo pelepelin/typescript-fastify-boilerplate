@@ -1,6 +1,7 @@
 module.exports = {
   preset: "ts-jest/presets/js-with-ts",
   testEnvironment: "node",
+  roots: ["<rootDir>/src"],
   testMatch: ["<rootDir>/src/**/__tests__/*.test.[jt]s?(x)"],
   collectCoverageFrom: ["src/**/*.{js,ts}", "!**/__tests__/**/*"],
   coverageThreshold: {
