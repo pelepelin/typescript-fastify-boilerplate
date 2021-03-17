@@ -8,5 +8,5 @@
     "sourceMap": false
   },
   "include": ["src/**/*"],
-  "exclude": ["**/__tests__/**/*", "**/*.test.*"]
+  "exclude": ["**/__tests__/**/*", "**/*.test.*", "**/__mocks__/**/*"]
 }
